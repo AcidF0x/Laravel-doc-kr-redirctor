@@ -1,11 +1,13 @@
 var checkbox = document.getElementById('checkbox');
-var appOptions = {
-    redirectStatus: localStorage.getItem("redirectStatus") === "true"
-};
-checkbox.checked = appOptions.redirectStatus;
-checkbox.addEventListener('click', function() {
-    appOptions.redirectStatus = !appOptions.redirectStatus;
-    localStorage.setItem('redirectStatus', appOptions.redirectStatus);
-}, false);
+
+chrome.storage.local.get('redirectStatus', function(e){
+    var status = e.redirectStatus;
+    checkbox.checked = status;
+    checkbox.addEventListener('click', function() {
+        chrome.storage.local.set({'redirectStatus' : !status});
+        chrome.extension.sendMessage({ status: !status });
+    }, false);
+});
+
 
 

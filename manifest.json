@@ -1,7 +1,7 @@
 {
-  "name" : "Laravel document KR Redirector",
+  "name" : "라라벨 영어 <-> 한국어 자동 이동",
   "version" : "0.0.1",
-  "description" : "Laravel 영문 문서 접속시 한국어 페이지로 자동 전환 해줍니다",
+  "description" : "라라벨 영문 문서 접속시 한국어 문서로 전환 해줍니다",
   "icons": {
     "16":  "icon/default-16.png",
     "32":  "icon/default-32.png",
@@ -10,12 +10,14 @@
   },
   "manifest_version": 2,
   "permissions": [
-    "contextMenus",
-    "storage"
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "https://laravel.com/docs/*"
   ],
   "browser_action": {
-    "default_title": "Active/inactive Redirect",
     "default_icon": "icon/default-48.png",
     "default_popup": "index.html"
-  }
+  },
+  "background": {"scripts":["background.js"]}
 }

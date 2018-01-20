@@ -1,1 +1,1 @@
-# Laravel-doc-kr-redirctor
+# Laravel-doc-kr-redirector
