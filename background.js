@@ -9,8 +9,6 @@ function updateStatus() {
     });
 }
 
-updateStatus();
-
 chrome.webRequest.onBeforeRequest.addListener(function(e){
     if (status === "true") {
         return {
@@ -25,3 +23,4 @@ chrome.webRequest.onBeforeRequest.addListener(function(e){
 },
     ["blocking"]
 );
+

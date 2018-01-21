@@ -3,10 +3,10 @@
   "version" : "0.0.1",
   "description" : "라라벨 영문 문서 접속시 한국어 문서로 전환 해줍니다",
   "icons": {
-    "16":  "icon/default-16.png",
-    "32":  "icon/default-32.png",
-    "48":  "icon/default-48.png",
-    "128": "icon/default-128.png"
+    "16":  "icon/icon-16.png",
+    "32":  "icon/icon-32.png",
+    "48":  "icon/icon-48.png",
+    "128": "icon/icon-128.png"
   },
   "manifest_version": 2,
   "permissions": [
@@ -16,7 +16,7 @@
     "https://laravel.com/docs/*"
   ],
   "browser_action": {
-    "default_icon": "icon/default-48.png",
+    "default_icon": "icon/icon-gray-48.png",
     "default_popup": "index.html"
   },
   "background": {"scripts":["background.js"]}
