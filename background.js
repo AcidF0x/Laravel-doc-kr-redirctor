@@ -3,11 +3,9 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse){
     status = request.status;
 });
 
-function updateStatus() {
-    chrome.storage.local.get('redirectStatus', function(e){
-        status = e.redirectStatus;
-    });
-}
+chrome.storage.local.get('redirectStatus', function(e){
+    status = e.redirectStatus;
+});
 
 chrome.webRequest.onBeforeRequest.addListener(function(e){
     if (status === "true") {
