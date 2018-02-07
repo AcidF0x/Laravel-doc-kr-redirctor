@@ -6,8 +6,11 @@
 
 라라벨 영문 문서 접속시 자동으로 한국어 페이지로 리다이렉트 해줍니다
 
-##Logo 
+## Logo 
 [Laravel Art](https://github.com/laravel/art)
 
-##LICENSE
+## LICENSE
 MIT
+
+## Todos
+[ ] On/Off 방법 변경
