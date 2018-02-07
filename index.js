@@ -38,7 +38,6 @@ function bindEvent() {
 }
 
 storage.get(redirector.storageKey, function(e){
-    console.log('have value');
     redirector.status = e[redirector.storageKey];
     updateCheckbox();
     iconUpdate();

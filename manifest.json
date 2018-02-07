@@ -1,6 +1,6 @@
 {
   "name" : "라라벨 메뉴얼 리다이렉터",
-  "version" : "2.0.1",
+  "version" : "2.0.2",
   "description" : "라라벨 영문 문서 접속시 한국어 문서로 전환 해줍니다",
   "icons": {
     "16":  "icon/icon-16.png",
